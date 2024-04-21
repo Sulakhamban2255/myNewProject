@@ -102,6 +102,16 @@
         margin-bottom: 10px;
       }
     }
+    @media (max-width: 768px) {
+      .marquee-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .marquee-content {
+        display: inline-block;
+      }
+    }
   </style>
 
   <body>
@@ -483,7 +493,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid mt-3">
+    <!-- <div class="container-fluid mt-3">
       <div class="row">
         <marquee behavior="scroll" direction="right" scrollamount="10">
           <div class="col-12 overflow-hidden">
@@ -521,6 +531,49 @@
             </div>
           </div>
         </marquee>
+      </div>
+    </div> -->
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-12 marquee-container">
+          <marquee
+            behavior="scroll"
+            direction="right"
+            scrollamount="10"
+            class="marquee-content"
+          >
+            <img
+              src="./Image_Assets/intLogo (1).jpg"
+              alt="Image 1"
+              class="img-fluid mr-3"
+            />
+            <img
+              src="./Image_Assets/intLogo (2).jpg"
+              alt="Image 2"
+              class="img-fluid mr-3"
+            />
+            <img
+              src="./Image_Assets/intLogo (3).jpg"
+              alt="Image 3"
+              class="img-fluid mr-3"
+            />
+            <img
+              src="./Image_Assets/intLogo (4).jpg"
+              alt="Image 4"
+              class="img-fluid mr-3"
+            />
+            <img
+              src="./Image_Assets/intLogo (5).jpg"
+              alt="Image 5"
+              class="img-fluid mr-3"
+            />
+            <img
+              src="./Image_Assets/intLogo (6).jpg"
+              alt="Image 6"
+              class="img-fluid"
+            />
+          </marquee>
+        </div>
       </div>
     </div>
 
